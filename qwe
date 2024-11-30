@@ -1,0 +1,11 @@
+name = input("Введите имя: ")
+age = int(input("Введите возраст: "))
+city = input("Введите город проживания: ")
+
+person = {"name": name, "age": age, "city": city}
+
+print(f"Имя: {person['name']}, Возраст: {person['age']}, Город: {person['city']}")
+
+person["age"] += 1
+
+print(person)
