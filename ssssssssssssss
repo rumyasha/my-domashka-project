@@ -1,0 +1,26 @@
+products = {"яблоко": 50, "банан": 30, "апельсин": 60}
+a = {}
+
+product_names = input("Введите названия товаров через пробел: ").strip().lower().split()
+quantities = input("Введите количество для каждого товара через пробел: ").strip().split()
+
+if len(product_names) != len(quantities):
+    print("Ошибка")
+else:
+    total_cost = 0
+    for i in range(len(product_names)):
+        product = product_names[i]
+        quantity = quantities[i]
+
+        if product in products:
+            if quantity.isdigit() and int(quantity) > 0:
+                a[product] = int(quantity)
+                total_cost += products[product] * int(quantity)
+            else:
+                print(f"Ошибка.")
+        else:
+            print(f"Ошибка")
+
+    if a:
+        print(f"Вы выбрали: {a}")
+        print(f"Итоговая стоимость покупки: {total_cost} сом")
