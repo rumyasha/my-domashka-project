@@ -1,0 +1,8 @@
+students = {"Иван": 85, "Анна": 92, "Пётр": 74, "Ольга": 88}
+q = {}
+for key, value in students.items():
+    if value > 80:
+        q[key] = value
+print("порог 80:")
+print("результат:")
+print(q)
