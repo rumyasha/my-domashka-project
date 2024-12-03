@@ -1,0 +1,7 @@
+my_set_1 = {"apple", "banana", "cherry", "apple", "date"}
+my_set_2 = {"banana", "date", "fig", "grape", "apple"}
+my_set_3 = my_set_1 & (my_set_2)
+my_set_5 = [len(i) for i in my_set_3]
+print(my_set_5)
+print(type(my_set_5))
+# помощник ментора почему на сайте у вас результат 6 5 5  ?
