@@ -1,0 +1,49 @@
+#тут 2 дз ткк я не понял всё до конца 2 вариант этого дз с низу
+def simple_arithmetic(calculate, number: int, number_2: int, add: str = "+", subtract: str = "-", multiply: str = "*", divide: str = "/"):
+    if calculate == add:
+        return number + number_2
+    elif calculate == subtract:
+        return number - number_2
+    elif calculate == multiply:
+        return number * number_2
+    elif calculate == divide:
+        if number_2 != 0:
+            return number / number_2
+        else:
+            return "Cannot divide by zero"
+    else:
+        return "Unsupported operation"
+
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+plus = "+"
+minus = "-"
+umnozheniye = "*"
+razdelit = "/"
+print("Addition:", simple_arithmetic(plus, a, b))
+print("Subtraction:", simple_arithmetic(minus, a, b))
+print("Multiplication:", simple_arithmetic(umnozheniye, a, b))
+print("Division:", simple_arithmetic(razdelit, a, b))
+
+вот тут
+#2 дз на всякий случай
+def calculate(num1, num2, operation):
+    if operation == "add":
+        return num1 + num2
+    elif operation == "subtract":
+        return num1 - num2
+    elif operation == "multiply":
+        return num1 * num2
+    elif operation == "divide":
+        if num2 != 0:
+            return num1 / num2
+        else:
+            return "Cannot divide by zero"
+    else:
+        return "Unsupported operation"
+
+# Примеры вызова функции:
+print(calculate(10, 5, "add"))
+print(calculate(10, 5, "subtract"))
+print(calculate(10, 5, "multiply"))
+print(calculate(10, 5, "divide"))
