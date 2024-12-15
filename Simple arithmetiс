@@ -42,7 +42,7 @@ def calculate(num1, num2, operation):
     else:
         return "Unsupported operation"
 
-# Примеры вызова функции:
+
 print(calculate(10, 5, "add"))
 print(calculate(10, 5, "subtract"))
 print(calculate(10, 5, "multiply"))
