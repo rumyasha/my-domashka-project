@@ -1,0 +1,8 @@
+def sum_list():
+    user_input = input("Enter numbers separated by spaces: ")
+    numbers = [int(num) for num in user_input.split()] if user_input.strip() else []
+    if not numbers:
+        return 0
+    return sum(numbers)
+
+print("Sum:", sum_list())
