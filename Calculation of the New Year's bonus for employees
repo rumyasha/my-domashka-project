@@ -1,0 +1,10 @@
+def new_year_bonus(name, last_name, salary=120000, bonus=10):
+    bonus_amount = salary * (bonus / 100)
+    total_amount = salary + bonus_amount
+    print(f"Новогодняя премия сотрудника {name} {last_name}: {bonus_amount:.2f} сом")
+    print(f"Оклад: {salary:.2f} сом")
+    print(f"Всего к выдаче: {total_amount:.2f} сом")
+    print()
+
+new_year_bonus("Алина", "Тимофеева", salary=150000, bonus=25)
+new_year_bonus("Алексей", "Ковалев")
